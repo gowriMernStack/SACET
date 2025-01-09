@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal's Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .principal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .principal img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            padding: 10px;
+        }
+        .details {
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #060808;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://sacet.ac.in/wp-content/uploads/2021/07/logo-final.png" alt="College Logo" >
+            <span>St. Ann's</span>
+        </div>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li>
+                <a href="#">Admissions</a>
+                <div class="dropdown">
+                    <a href="admissionprocedure.html">Admission Procedure</a>
+                    <a href="coursesoffered.html">Courses Offered</a>
+                    <a href="studentregistration.html" target="_blank">Student Registration Form</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Departments</a>
+                <div class="dropdown">
+                    <a href="/cse.html">Computer Science Engineering</a>
+                    <a href="/ME.html">Mechanical Engineering</a>
+                    <a href="/eee.html">Electrical and Electronics Engineering</a>
+                    <a href="/ece.html">Electronics and Communication Engineering</a>
+                    <a href="civil.html">Civil Engineering</a>
+                    <a href="cs.html">Cyber Security</a>
+                    <a href="datascience.html">Data Science</a>
+                    <a href="aiml.html">Artificial Intelligence & Machine Learning</a>
+                    <a href="iot.html">Internet of Things(IoT)</a>
+                    <!-- <a href="#">MBA</a>
+                    <a href="#">MCA</a>
+                    <a href="#">Polytechnic</a> -->
+                </div>
+            </li>
+            <li>
+                <a href="examnotifications.html">Examination</a>
+            </li>
+            <li>
+                <a href="#">Placements</a>
+                <div class="dropdown">
+                    <a href="tpo.html">TPO Cell</a>
+                    <a href="placements.html">Students Placed</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+                <div class="dropdown">
+                    <a href="about campus.html" target="_blank">About Campus</a>
+                    <a href="principle.html">Principal</a>
+                    <a href="management.html">Management</a>
+                </div>
+            </li>
+        </ul>
+        <button class="register-btn"><a href="studentregistration.html" target="_blank">Register Now</a></button>
+    </nav>
+    <br><br><br><br>
+
+    <header>
+        <h1>Principal's Profile</h1>
+    </header>
+    <div class="container">
+        <div class="principal">
+            <img src="principal.jpg" alt="Principal's Photo">
+            <div class="details">
+                <h2>DR. K.JAGADEESH BABU</h2>
+                <h3>Principal</h3>
+                <h4>PhD, (Post doc-IIT KGP), SMIEEE</h4>
+                <p>Dr.K.JAGADEESH BABU has received PhD in 2013 and M.Tech. in 2006 from JNTUH, Hyderabad in the department of ECE. 
+                    He is a post-doctoral researcher from IIT Kharagpur. He published more than 80 research papers in reputed SCI 
+                    and Scopus Indexed journals. He executed various research projects worth more than 40 lakhs from various funding 
+                    agencies like AICTE, New Delhi, DSR, Saudi Arabia etc. He received travel grant from DST to participate in PIERS 
+                    International conference in Singapore. He received Best Teacher Award in 2012 and Best Researcher Award in 2018 
+                    from JNTUK, Kakinada. He is a senior member of IEEE.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright © 2025 SACET | Powered by SACET.</p>
+    </footer>
+</body>
+</html>
