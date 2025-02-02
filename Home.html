@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +27,7 @@
             z-index: -1;
         }
 
-        .navbar {
+        /* .navbar {
             position: fixed;
             top: 0;
             width: 100%;
@@ -49,9 +50,9 @@
             margin-right: 1rem;
         }
 
-        .navbar .logo span{
+        .navbar .logo span {
             font-size: larger;
-            color:burlywood;
+            color: burlywood;
             font-style: bold;
             size: 100px;
 
@@ -72,7 +73,6 @@
             text-decoration: none;
             color: white;
             font-size: 1rem;
-            /* padding: 10px; */
         }
 
         .navbar .dropdown {
@@ -92,7 +92,6 @@
         .navbar .dropdown a {
             display: block;
             margin: 1rem 0.5rem;
-            /* padding: 5px; */
         }
 
         .register-btn {
@@ -103,7 +102,145 @@
             border-radius: 5px;
             cursor: pointer;
             margin-left: 2rem;
-        }
+        } */
+
+
+
+        .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    z-index: 100;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.navbar .logo img {
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.navbar .logo span{
+    font-size: larger;
+    color:burlywood;
+    font-style: bold;
+    size: 100px;
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar li {
+    position: relative;
+    margin: 0 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    /* padding: 10px; */
+}
+
+.navbar .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0,0.9);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+}
+
+.navbar .dropdown a {
+    display: block;
+    margin: 1rem 0.5rem;
+    /* padding: 5px; */
+}
+
+.register-btn {
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 2rem;
+}.navbar li a:hover {
+    background-color: #ddd;
+    color: black;
+    padding: 10px;
+}
+.navbar li a:hover {
+    background-color: #ddd;
+    color: black;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navbar li {
+        margin: 0.5rem 0;
+    }
+
+    .register-btn {
+        margin-top: 1rem;
+        align-self: flex-start;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .navbar a {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .navbar .logo img {
+        height: 30px;
+    }
+
+    .register-btn {
+        flex-direction: column;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
 
         .content {
             color: white;
@@ -140,7 +277,7 @@
             cursor: pointer;
         }
 
-        .explore-btn a{
+        .explore-btn a {
             text-decoration: none;
         }
 
@@ -153,21 +290,21 @@
         .achievements h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            margin-top: 1rem ;
+            margin-top: 1rem;
         }
-        
+
         .navbar li a:hover {
             background-color: #ddd;
             color: black;
             padding: 10px;
         }
 
-        .explore-btn:hover{
+        .explore-btn:hover {
             box-shadow: #25d47d;
             border-width: 10px;
         }
 
-        .register-btn:hover{
+        .register-btn:hover {
             box-shadow: #85cd2c;
         }
 
@@ -205,7 +342,7 @@
 
 
         .footer {
-            background-color:rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.8);
             color: #ffffff;
             padding: 30px 20px;
         }
@@ -277,7 +414,7 @@
             color: #868e96;
         }
 
-        
+
         .body1 {
             font-family: 'Arial', sans-serif;
             background: linear-gradient(135deg, #2a7cbf, #aa6c80);
@@ -286,8 +423,77 @@
             color: white;
         }
 
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+            .navbar li {
+                margin: 0.5rem 0;
+            }
+
+            .register-btn {
+                margin-top: 1rem;
+                align-self: flex-start;
+            }
+
+            .naac-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content h1 {
+                font-size: 2rem;
+            }
+
+            .content p {
+                font-size: 1rem;
+            }
+
+            .content button {
+                font-size: 0.9rem;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+
+            .navbar a {
+                font-size: 0.8rem;
+                padding: 8px;
+            }
+
+            .content h1 {
+                font-size: 1.5rem;
+            }
+
+            .content p {
+                font-size: 0.8rem;
+            }
+
+            .navbar .logo img {
+                height: 30px;
+            }
+
+            .register-btn {
+                flex-direction: column;
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <video class="background-video" autoplay loop muted>
         <source src="sacet.MP4" type="video/mp4">
@@ -296,7 +502,7 @@
 
     <nav class="navbar">
         <div class="logo">
-            <img src="https://sacet.ac.in/wp-content/uploads/2021/07/logo-final.png" alt="College Logo" >
+            <img src="https://sacet.ac.in/wp-content/uploads/2021/07/logo-final.png" alt="College Logo">
             <span>St. Ann's</span>
         </div>
         <ul>
@@ -321,9 +527,6 @@
                     <a href="datascience.html">Data Science</a>
                     <a href="aiml.html">Artificial Intelligence & Machine Learning</a>
                     <a href="iot.html">Internet of Things(IoT)</a>
-                    <!-- <a href="#">MBA</a>
-                    <a href="#">MCA</a>
-                    <a href="#">Polytechnic</a> -->
                 </div>
             </li>
             <li>
@@ -344,6 +547,9 @@
                     <a href="management.html">Management</a>
                 </div>
             </li>
+            <li>
+                <a href="teams.html">Team</a>
+            </li>
         </ul>
         <button class="register-btn"><a href="studentregistration.html" target="_blank">Register Now</a></button>
     </nav>
@@ -360,7 +566,7 @@
     <div class="achievements">
         <h2>Achievements & Credentials</h2>
     </div>
-    
+
     <section>
         <div class="body1">
             <!-- <div class="wave-container">
@@ -369,56 +575,81 @@
                 <div class="wave wave3"></div>
             </div> -->
 
-        <div class="naac-container">
-            <div class="image-section">
-                <img src="https://sacet.ac.in/wp-content/uploads/2021/11/16314397831631000038802-8024579_graduation-hindustan-university-new-logo.png" alt="NAAC Accreditation Badge" style="height: 300px; padding: 0px 200px; ">
+            <div class="naac-container">
+                <div class="image-section">
+                    <img src="https://sacet.ac.in/wp-content/uploads/2021/11/16314397831631000038802-8024579_graduation-hindustan-university-new-logo.png"
+                        alt="NAAC Accreditation Badge" style="height: 300px; padding: 0px 200px; ">
+                </div>
+                <div class="details-section">
+                    <h2>ACCREDITED BY</h2>
+                    <h1><strong>NAAC with 'A' Grade</strong></h1>
+                    <p>Valid up to 31-Dec-2027.</p>
+                </div>
             </div>
-            <div class="details-section">
-                <h2>ACCREDITED BY</h2>
-                <h1><strong>NAAC with 'A' Grade</strong></h1>
-                <p>Valid up to 31-Dec-2027.</p>
+            <div class="naac-container">
+                <div class="details-section">
+                    <h2>ACCREDITED BY</h2>
+                    <h1><strong>NBA</strong></h1>
+                    <p>Accreditation is a process of quality assurance and improvement, whereby a programme in an
+                        approved Institution is critically appraised to verify that the Institution or the programme
+                        continues to meet and/or exceed the Norms and Standards prescribed by regulator from time to
+                        time. It is a kind of recognition which indicates that a programme or Institution fulfills
+                        certain standards.</p>
+                </div>
+                <div class="image-section">
+                    <img src="https://sacet.ac.in/wp-content/uploads/2021/09/download.png" alt="NBA Accreditation Badge"
+                        style="height: 250px; padding: 0px 200px;">
+                </div>
             </div>
-        </div>
-        <div class="naac-container">
-            <div class="details-section">
-                <h2>ACCREDITED BY</h2>
-                <h1><strong>NBA</strong></h1>
-                <p>Accreditation is a process of quality assurance and improvement, whereby a programme in an approved Institution is critically appraised to verify that the Institution or the programme continues to meet and/or exceed the Norms and Standards prescribed by regulator from time to time. It is a kind of recognition which indicates that a programme or Institution fulfills certain standards.</p>
+            <div class="naac-container">
+                <div class="image-section">
+                    <img src="https://sacet.ac.in/wp-content/uploads/2021/09/Jntuk-logo-1.png" alt="Affiliated to JNTUK"
+                        style="height: 260px; padding: 0px 200px;">
+                </div>
+                <div class="details-section">
+                    <h2>PERMANENTLY AFFLIATED TO</h2>
+                    <h1><strong>JNTUK</strong></h1>
+                    <p>JNTU (Jawaharlal Nehru Technological University) was originally ‘The College of Engineering,
+                        Vizagpatnam’ at the time of its establishment in 1946. It is now a sprawling campus of 110
+                        acres, green with mango trees in the fast developing Port city of Kakinada, East coast of
+                        peninsula India. Kakinada has a rich political literacy and cultural heritage passed on through
+                        generations This college became a constituent of the Jawaharlal Nehru Technological University
+                        w.e.f 02-10-1972 through an act of legislature along with other sister institutions under the
+                        control of the then Director of Technical Education, Government of Andhra Pradesh. Earlier, it
+                        was affiliated to Andhra University. In the year 2003 the college has become autonomous.</p>
+                </div>
             </div>
-            <div class="image-section">
-                <img src="https://sacet.ac.in/wp-content/uploads/2021/09/download.png" alt="NBA Accreditation Badge" style="height: 250px; padding: 0px 200px;">
+            <div class="naac-container">
+                <div class="details-section">
+                    <h2>APPROVED BY</h2>
+                    <h1><strong>India Council for Technical Education (AICTE)</strong></h1>
+                    <p>In accordance with the provisions of the AICTE Act (1987), for the first five years after its
+                        inception in 1988, the Minister for Human Resource Development, the Government of India, was the
+                        Chairman of the Council. The first full-time Chairman was appointed on July 2, 1993 and the
+                        Council was reconstituted in March 1994 with a term of three years. The Executive Committee was
+                        re-constituted on July 7, 1994 and All India Board of Studies and Advisory Boards were
+                        constituted in 1994-95. Regional Offices of the Ministry of Human Resource Development, the
+                        Government of India, located in Kolkata, Chennai, Kanpur, and Mumbai were transferred to AICTE
+                        and the staff working in these offices were also deputed to the Council on foreign service terms
+                        w.e.f. October 1, 1995.</p>
+                </div>
+                <div class="image-section">
+                    <img src="https://sacet.ac.in/wp-content/uploads/2021/09/ICTE.png" alt="Approved by AICTE"
+                        style="height: 300px; padding: 0px 100px;">
+                </div>
             </div>
-        </div>
-        <div class="naac-container">
-            <div class="image-section">
-                <img src="https://sacet.ac.in/wp-content/uploads/2021/09/Jntuk-logo-1.png" alt="Affiliated to JNTUK" style="height: 260px; padding: 0px 200px;">
+            <div class="naac-container">
+                <div class="image-section">
+                    <img src="https://sacet.ac.in/wp-content/uploads/2021/11/Andhra-Pradesh-State-Disaster-Response-and-Fire-Services.png"
+                        alt="AP State Government" style="padding: 0px 200px;">
+                </div>
+                <div class="details-section">
+                    <h2>AWARDED 'A' GRADE BY</h2>
+                    <h1><strong>AP STATE GOVERNMENT</strong></h1>
+                    <p>SACET was awarded as rank ” A” Category in Engineering education. With the infrastructure,
+                        curriculum plan lot of students got placed in various MNCs.</p>
+                </div>
             </div>
-            <div class="details-section">
-                <h2>PERMANENTLY AFFLIATED TO</h2>
-                <h1><strong>JNTUK</strong></h1>
-                <p>JNTU (Jawaharlal Nehru Technological University) was originally ‘The College of Engineering, Vizagpatnam’ at the time of its establishment in 1946. It is now a sprawling campus of 110 acres, green with mango trees in the fast developing Port city of Kakinada, East coast of peninsula India. Kakinada has a rich political literacy and cultural heritage passed on through generations This college became a constituent of the Jawaharlal Nehru Technological University w.e.f 02-10-1972 through an act of legislature along with other sister institutions under the control of the then Director of Technical Education, Government of Andhra Pradesh. Earlier, it was affiliated to Andhra University. In the year 2003 the college has become autonomous.</p>
-            </div>
-        </div>
-        <div class="naac-container">
-            <div class="details-section">
-                <h2>APPROVED BY</h2>
-                <h1><strong>India Council for Technical Education (AICTE)</strong></h1>
-                <p>In accordance with the provisions of the AICTE Act (1987), for the first five years after its inception in 1988, the Minister for Human Resource Development, the Government of India, was the Chairman of the Council. The first full-time Chairman was appointed on July 2, 1993 and the Council was reconstituted in March 1994 with a term of three years. The Executive Committee was re-constituted on July 7, 1994 and All India Board of Studies and Advisory Boards were constituted in 1994-95. Regional Offices of the Ministry of Human Resource Development, the Government of India, located in Kolkata, Chennai, Kanpur, and Mumbai were transferred to AICTE and the staff working in these offices were also deputed to the Council on foreign service terms w.e.f. October 1, 1995.</p>
-            </div>
-            <div class="image-section">
-                <img src="https://sacet.ac.in/wp-content/uploads/2021/09/ICTE.png" alt="Approved by AICTE" style="height: 300px; padding: 0px 100px;">
-            </div>
-        </div>
-        <div class="naac-container">
-            <div class="image-section">
-                <img src="https://sacet.ac.in/wp-content/uploads/2021/11/Andhra-Pradesh-State-Disaster-Response-and-Fire-Services.png" alt="AP State Government" style="padding: 0px 200px;">
-            </div>
-            <div class="details-section">
-                <h2>AWARDED 'A' GRADE BY</h2>
-                <h1><strong>AP STATE GOVERNMENT</strong></h1>
-                <p>SACET was awarded as rank ” A” Category in Engineering education. With the infrastructure, curriculum plan lot of students  got placed in various MNCs.</p>
-            </div>
-        </div>
         </div>
     </section>
     <footer class="footer">
@@ -451,4 +682,5 @@
         </div>
     </footer>
 </body>
+
 </html>

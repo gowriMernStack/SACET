@@ -70,13 +70,75 @@
             margin-bottom: 20px;
         }
 
-        .footer {
+        /* .footer {
             margin-top: auto;
             font-size: 1rem;
             text-align: center;
             padding: 1rem;
+        } */
+
+        .footer {
+            background-color:rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            padding: 20px 20px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 0px;
+            /* border-top: 1px solid #495057; */
+            padding-top: 10px;
+            font-size: 14px;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            color: #f9fafa;
         }
         
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .section p {
+                font-size: 1rem;
+            }
+
+            .hod-img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .section {
+                padding: 1rem;
+            }
+
+            .section p {
+                font-size: 0.9rem;
+            }
+
+            .hod-img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .footer-bottom p {
+                font-size: 12px;
+            }
+        }
+
+
     </style>
     <link rel="stylesheet" href="header.css">
     
@@ -133,6 +195,9 @@
                     <a href="management.html">Management</a>
                 </div>
             </li>
+            <li>
+                <a href="teams.html">Team</a>
+            </li>
         </ul>
         <button class="register-btn"><a href="studentregistration.html" target="_blank">Register Now</a></button>
     </nav>
@@ -160,7 +225,12 @@
             </p>
         </div>
 
-        <div class="footer">Copyright © 2025 SACET | Powered by SACET.</div>
+        <!-- <div class="footer">Copyright © 2025 SACET | Powered by SACET.</div> -->
     </div>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>Copyright © 2025 SACET | Powered by SACET.</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artificial Intelligence & Machine Learning Department</title>
     <style>
         * {
@@ -13,12 +11,13 @@
         }
 
         body {
-            background-image: url('background1.png'); /* Replace with your image path */
+            background-image: url('background1.png'); 
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             color: white;
-            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+            /* text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); */
+            overflow-x: hidden;
         }
 
         .content {
@@ -71,10 +70,77 @@
         }
 
         .footer {
-            margin-top: auto;
-            font-size: 1rem;
+            background-color:rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            padding: 20px 20px;
+        }
+
+        .footer-bottom {
             text-align: center;
-            padding: 1rem;
+            margin-top: 0px;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            color: #f9fafa;
+        }
+
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .section p {
+                font-size: 1.1rem;
+            }
+
+            .section img {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .section p {
+                font-size: 1rem;
+            }
+
+            .hod-img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .section {
+                padding: 1rem;
+            }
+
+            .section p {
+                font-size: 0.9rem;
+            }
+
+            .hod-img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .footer-bottom p {
+                font-size: 12px;
+            }
         }
 
     </style>
@@ -132,6 +198,9 @@
                     <a href="management.html">Management</a>
                 </div>
             </li>
+            <li>
+                <a href="teams.html">Team</a>
+            </li>
         </ul>
         <button class="register-btn"><a href="studentregistration.html" target="_blank">Register Now</a></button>
     </nav>
@@ -160,7 +229,12 @@ A study by Oxford University and Yale University indicates that AI will outperfo
             </p>
         </div>
 
-        <div class="footer">Copyright © 2025 SACET | Powered by SACET.</div>
+        <!-- <div class="footer">Copyright © 2025 SACET | Powered by SACET.</div> -->
     </div>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>Copyright © 2025 SACET | Powered by SACET.</p>
+        </div>
+    </footer>
 </body>
 </html>

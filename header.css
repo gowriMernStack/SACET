@@ -89,3 +89,46 @@
     color: black;
     padding: 10px;
 }
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navbar li {
+        margin: 0.5rem 0;
+    }
+
+    .register-btn {
+        margin-top: 1rem;
+        align-self: flex-start;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .navbar a {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .navbar .logo img {
+        height: 30px;
+    }
+
+    .register-btn {
+        flex-direction: column;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
